@@ -395,7 +395,7 @@ configureNFSUnix()
   #Export to file
   printf "$exports" | sudo tee /etc/exports >/dev/null
 
-  sudo nfsd restart ; sleep 2 && sudo nfsd checkexports
+  sudo nfsd stop && sudo nfsd start; sleep 2 && sudo nfsd checkexports
 
   echoSuccess "\t\t\t\t\t\tOK"
 }

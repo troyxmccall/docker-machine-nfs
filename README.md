@@ -27,7 +27,7 @@ existing boot2docker box created through
 ### Standalone
 
 ```sh
-curl -s https://raw.githubusercontent.com/adlogix/docker-machine-nfs/master/docker-machine-nfs.sh |
+curl -s https://raw.githubusercontent.com/troyxmccall/docker-machine-nfs/master/docker-machine-nfs.sh |
   sudo tee /usr/local/bin/docker-machine-nfs > /dev/null && \
   sudo chmod +x /usr/local/bin/docker-machine-nfs
 ```
